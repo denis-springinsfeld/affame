@@ -5,7 +5,7 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden">
     <a-assets>
-      <a-asset-item id="fish" src="assets/Balloon.glb"></a-asset-item>
+      <a-asset-item id="fish" src="assets/Fish.glb"></a-asset-item>
     </a-assets>
     <a-scene embedded arjs>
       <!-- <a-sky color="#F37748"></a-sky> -->
@@ -18,10 +18,11 @@
         <a-entity
           position="0 0 0"
           gltf-model="#fish"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+          scale="0.4 0.4 0.4"
         ></a-entity>
       </a-marker>
     </a-scene>
   </body>
 </html>
 <!-- gltf-model="https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf" -->
+<!-- animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" -->
