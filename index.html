@@ -21,8 +21,8 @@
 
     <script>
       AFRAME.registerComponent("marker-distance", {
-        tick: function () {
-          console.log(el.position);
+        init: function () {
+          console.log(this.el.position);
         },
       });
     </script>
